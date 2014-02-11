@@ -1,6 +1,7 @@
 # Phaser Boilerplate
 
 This Boilerplate helps to get started with the fabulous HTML5 game framework [Phaser](http://www.phaser.io).
+Inspired by https://github.com/luizbills/phaser-js-boilerplate
 
 ## Getting started
 
