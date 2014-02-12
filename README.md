@@ -5,7 +5,7 @@ Inspired by https://github.com/luizbills/phaser-js-boilerplate
 
 ## Getting started
 
-install Grunt as described at http://gruntjs.com/
+Install Grunt as described at http://gruntjs.com/
 `npm install -g grunt-cli`
 
 Go to Boilerplate directory and install required npm modules: `npm install`
@@ -32,10 +32,9 @@ All files are located in `src`
 ## What does this boilerplate do?
 
 - Lint (jshint) your javascript code.
-- Copy all your assets to a `game` directory
 - Copy all assets to the `game` directory
 - Concatenate and uglify all JS-Files into one `game.js`
-- Copy all file from public to `game` (e. g. index.html)
+- Copy all files from public to `game` (e. g. index.html)
 
 ## Shipping your game
 - `grunt build`
