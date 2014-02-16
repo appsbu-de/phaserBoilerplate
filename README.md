@@ -17,14 +17,14 @@ If you change any of the source files, a new package would be build and your bro
 
 All files are located in `src`
 
-`src/public` - index.html
-`src/js` - all js files
-`src/js/states` - Boilerplate Game States
-`src/phaser` - Phaser main file (1.1.4 included in this version)
-`src/assets` - Assets sorted in directories.
-`src/assets/audio` - All audio assets needed in your game
-`src/assets/fonts` - all Fonts/bitmap fonts and definitions
-`src/assets/img` - Every other image you need
+- `src/public` - index.html
+- `src/js` - all js files
+- `src/js/states` - Boilerplate Game States
+- `src/phaser` - Phaser main file (1.1.4 included in this version)
+- `src/assets` - Assets sorted in directories.
+- `src/assets/audio` - All audio assets needed in your game
+- `src/assets/fonts` - all Fonts/bitmap fonts and definitions
+ -`src/assets/img` - Every other image you need
 
 ## Which path to use in your game
 - always refer to `assets/...`
