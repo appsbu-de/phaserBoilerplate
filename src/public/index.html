@@ -4,7 +4,17 @@
 	<meta charset="UTF-8" />
 	<title>Phaser Basic Project Template</title>
 	<script src="phaser.js"></script>
-	<script src="game.js"></script>
+    <!--(if target debug)><!-->
+    <script type="text/javascript" src="src/entities/tube.js"></script>
+    <script type="text/javascript" src="src/entities/birdies.js"></script>
+    <script type="text/javascript" src="src/states/Boot.js"></script>
+    <script type="text/javascript" src="src/states/Preloader.js"></script>
+    <script type="text/javascript" src="src/states/MainMenu.js"></script>
+    <script type="text/javascript" src="src/states/Game.js"></script>
+    <!--<!(endif)-->
+    <!--(if target dist)><!-->
+    <script src="game.js"></script>
+    <!--<!(endif)-->
 </head>
 <body>
 

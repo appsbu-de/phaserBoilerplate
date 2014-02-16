@@ -30,15 +30,22 @@ All files are located in `src`
 - always refer to `assets/...`
 
 ## What does this boilerplate do?
-
 - Lint (jshint) your javascript code.
 - Copy all assets to the `game` directory
 - Concatenate and uglify all JS-Files into one `game.js`
 - Copy all files from public to `game` (e. g. index.html)
 
+## Development
+- `default` task is for development.
+- `grunt` copies your files (not minified, not concatenated) to `game`
+- `index.html` includes every single file.
+- Debug firendly, because errors could easily located in separated files.
+
 ## Shipping your game
 - `grunt build`
-- Copy everything in `game` to your web server
+- Your `states` will be concatenated and uglified/mangeld into `game.js`
+- All assets will also been copied
+- now copy everything in `game` directory to your web server
 - done.
 
 ## Legal

@@ -66,6 +66,12 @@ module.exports = function (grunt) {
                 src: '**',
                 dest: 'game/'
             },
+            debug: {
+                expand: true,
+                cwd: 'src/js/',
+                src: '**',
+                dest: 'game/src'
+            },
             assets: {
                 expand: true,
                 cwd: 'src/assets/',
@@ -102,6 +108,21 @@ module.exports = function (grunt) {
             }
         },
 
+        targethtml: {
+
+            dist: {
+                files: {
+                    'game/index.html': 'src/public/index.html'
+                }
+            },
+
+            debug: {
+                files: {
+                    'game/index.html': 'src/public/index.html'
+                }
+            }
+        },
+
         open: {
             server: {
                 path: 'http://localhost:<%= connect.options.port %>'
@@ -114,17 +135,23 @@ module.exports = function (grunt) {
                     livereload: LIVERELOAD_PORT
                 },
                 files: ['<%= project.js %>','<%= project.assets %>/**/*'],
-                tasks: ['build']
+                tasks: ['debug']
             }
         }
     });
 
     // Default for Dev.
     grunt.registerTask('default', [
-        'build',
+        'debug',
         'connect:livereload',
         'open',
         'watch'
+    ]);
+
+    grunt.registerTask('debug', [
+        'clean',
+        'jshint',
+        'copydebug'
     ]);
 
     // Build for shipping
@@ -137,6 +164,15 @@ module.exports = function (grunt) {
 
     grunt.registerTask('copyfiles', [
         'copy:public',
+        'targethtml:dist',
+        'copy:assets',
+        'copy:phaser'
+    ]);
+
+
+    grunt.registerTask('copydebug', [
+        'copy:debug',
+        'targethtml:debug',
         'copy:assets',
         'copy:phaser'
     ]);
