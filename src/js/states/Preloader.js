@@ -1,6 +1,7 @@
 
 BasicGame.Preloader = function (game) {
 
+	this.game = game;
 	this.background = null;
 	this.preloadBar = null;
 

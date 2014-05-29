@@ -1,5 +1,6 @@
 
 BasicGame.Game = function (game) {
+    this.game = game;
 };
 
 BasicGame.Game.prototype = {

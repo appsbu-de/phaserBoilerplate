@@ -1,6 +1,7 @@
 BasicGame = {};
 
 BasicGame.Boot = function (game) {
+    this.game = game;
 };
 
 BasicGame.Boot.prototype = {
@@ -23,14 +24,14 @@ BasicGame.Boot.prototype = {
         else {
             //  Same goes for mobile settings.
             //  In this case we're saying "scale the game, no lower than 480x260 and no higher than 1024x768"
-            this.game.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL;
-            this.game.stage.scale.minWidth = 480;
-            this.game.stage.scale.minHeight = 260;
+            this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+            this.game.stage.scale.minWidth = 320;
+            this.game.stage.scale.minHeight = 240;
             this.game.stage.scale.maxWidth = 1024;
-            this.game.stage.scale.maxHeight = 768;
-            this.game.stage.scale.forceLandscape = true;
+            this.game.stage.scale.maxHeight = 768;            
             this.game.stage.scale.pageAlignHorizontally = true;
-            this.game.stage.scale.setScreenSize(true);
+            this.game.stage.scale.pageAlignVertically = true;
+            this.game.scale.setScreenSize(true);
         }
 
         this.game.state.start('Preloader');

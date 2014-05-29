@@ -1,5 +1,6 @@
 
 BasicGame.MainMenu = function (game) {
+	this.game = game;
 	this.music = null;
 	this.playButton = null;
 };
