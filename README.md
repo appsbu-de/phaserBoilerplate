@@ -3,6 +3,8 @@
 This Boilerplate helps to get started with the fabulous HTML5 game framework [Phaser](http://www.phaser.io).
 Inspired by https://github.com/luizbills/phaser-js-boilerplate
 
+> A version for pixel perfect scaling as [described here](http://www.html5gamedevs.com/topic/6090-lowrezjam-offical-thread/page-2#entry38068) has been added. Just checkout the [lowrez branch](https://github.com/appsbu-de/phaserBoilerplate/tree/lowrez).
+
 ## Getting started
 
 Install Grunt as described at http://gruntjs.com/
