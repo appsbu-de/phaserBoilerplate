@@ -21,5 +21,9 @@ BasicGame.MainMenu.prototype = {
 	startGame: function (pointer) {
 		//this.music.stop();
 		this.game.state.start('Game');
-	}
+	},
+
+    render: function() {
+        pixelcontext.drawImage(this.game.canvas, 0, 0, 32, 32, 0, 0, pixelwidth, pixelheight);
+    }
 };
