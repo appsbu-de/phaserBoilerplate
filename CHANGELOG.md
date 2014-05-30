@@ -1,5 +1,8 @@
 # Changelog
 
+### May 30th, 2014
+* lowrez option! :) 
+
 ### May 29th, 2014
 * switched to Phaser 2.0.5
 * fixed wrong scaling for mobile
