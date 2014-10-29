@@ -22,11 +22,13 @@ All files are located in `src`
 - `src/public` - index.html
 - `src/js` - all js files
 - `src/js/states` - Boilerplate Game States
-- `src/phaser` - Phaser main file (1.1.4 included in this version)
+- `src/phaser` - Phaser main file (2.1.3 - arcade-physics included.)
 - `src/assets` - Assets sorted in directories.
 - `src/assets/audio` - All audio assets needed in your game
 - `src/assets/fonts` - all Fonts/bitmap fonts and definitions
  -`src/assets/img` - Every other image you need
+
+> You could use any other phaser version. Just copy it into src/phaser. If you change the name, make sure you change it at Gruntfile.js, too.
 
 ## Which path to use in your game
 - always refer to `assets/...`
